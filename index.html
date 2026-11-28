@@ -147,7 +147,7 @@
     <div class="flex flex-col h-full w-full max-w-5xl mx-auto px-4 sm:px-8 py-4 sm:py-6 gap-4 overflow-hidden">
 
         <!-- MINIMALIST HEADER -->
-        <header class="flex items-center justify-between py-1 shrink-0">
+        <header class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 py-1 shrink-0">
             <a href="#home" class="flex items-center gap-3 group focus:outline-none">
                 <span class="w-7 h-7 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center font-mono text-xs font-medium text-teal-400 group-hover:border-zinc-700 transition-colors">
                     KC
@@ -157,11 +157,11 @@
                 </span>
             </a>
 
-            <nav aria-label="Primary Navigation" class="flex items-center gap-5 sm:gap-7 text-xs font-medium">
-                <a href="#home" class="nav-link">Overview</a>
-                <a href="#about" class="nav-link">Personal</a>
-                <a href="#achievements" class="nav-link">Milestones</a>
-                <a href="#family-friends" class="nav-link">People</a>
+            <nav aria-label="Primary Navigation" class="flex items-center gap-4 sm:gap-6 text-xs font-medium">
+                <a href="#home" class="nav-link whitespace-nowrap">Home Page</a>
+                <a href="#about" class="nav-link whitespace-nowrap">Personal Information</a>
+                <a href="#achievements" class="nav-link whitespace-nowrap">Achievements</a>
+                <a href="#family-friends" class="nav-link whitespace-nowrap">Family and Friend</a>
             </nav>
         </header>
 
@@ -169,7 +169,7 @@
         <main class="viewport-stage flex-1 min-h-0 w-full overflow-hidden">
 
             <!-- =============================================================== -->
-            <!-- VIEW 1: OVERVIEW (#home)                                        -->
+            <!-- VIEW 1: HOME PAGE (#home)                                       -->
             <!-- =============================================================== -->
             <section id="home" class="view-slide flex-col justify-between minimal-surface rounded-2xl p-6 sm:p-10 lg:p-12 overflow-hidden">
                 <div class="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-12 overflow-hidden">
@@ -200,7 +200,7 @@
                         </p>
 
                         <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mt-4 max-w-lg font-light">
-                            Building clean, responsive interfaces and structured digital solutions from <span class="text-zinc-200 font-normal">Amungan, Iba, Zambales</span>. Explore my personal background, academic and workplace milestones, and the people who shaped my journey.
+                            Building clean, responsive interfaces and structured digital solutions from <span class="text-zinc-200 font-normal">Amungan, Iba, Zambales</span>. Explore my personal information, academic and workplace achievements, and the family and friend who shaped my journey.
                         </p>
 
                         <!-- Minimal Stack Tags -->
@@ -214,14 +214,14 @@
                         <!-- Clean Navigation Actions -->
                         <div class="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-3">
                             <a href="#about" class="px-4 py-2 bg-zinc-100 hover:bg-white text-zinc-950 font-medium text-xs rounded-lg transition-colors flex items-center gap-2">
-                                <span>Personal Details</span>
+                                <span>Personal Information</span>
                                 <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                             <a href="#achievements" class="px-4 py-2 bg-transparent hover:bg-zinc-900 text-zinc-300 font-medium text-xs rounded-lg border border-zinc-800 transition-colors">
-                                Milestones
+                                Achievements
                             </a>
                             <a href="#family-friends" class="px-4 py-2 bg-transparent hover:bg-zinc-900 text-zinc-300 font-medium text-xs rounded-lg border border-zinc-800 transition-colors">
-                                People
+                                Family and Friend
                             </a>
                         </div>
                     </div>
@@ -230,9 +230,9 @@
 
                 <!-- Minimalist Bottom Index Bar -->
                 <div class="pt-4 border-t border-zinc-800/70 flex items-center justify-between text-[11px] font-mono text-zinc-500 shrink-0">
-                    <span>01 / 04 — OVERVIEW</span>
+                    <span>01 / 04 — HOME PAGE</span>
                     <a href="#about" class="text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5">
-                        <span>Next: Personal</span>
+                        <span>Next: Personal Information</span>
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
@@ -349,10 +349,10 @@
                 <div class="pt-3 border-t border-zinc-800/70 flex items-center justify-between text-[11px] font-mono shrink-0">
                     <a href="#home" class="text-zinc-500 hover:text-zinc-200 transition-colors flex items-center gap-1.5">
                         <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                        <span>Overview</span>
+                        <span>Home Page</span>
                     </a>
                     <a href="#achievements" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-1.5">
-                        <span>Next: Milestones</span>
+                        <span>Next: Achievements</span>
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
@@ -364,7 +364,7 @@
             <section id="achievements" class="view-slide flex-col justify-between minimal-surface rounded-2xl p-6 sm:p-8 overflow-hidden gap-4">
                 <div class="flex items-baseline justify-between pb-3 border-b border-zinc-800/70 shrink-0">
                     <h2 class="text-base sm:text-lg font-display font-semibold text-white tracking-tight">
-                        Academic &amp; Workplace Milestones
+                        Achievements
                     </h2>
                     <span class="text-[11px] font-mono text-zinc-500">03 / 04</span>
                 </div>
@@ -444,22 +444,22 @@
                 <div class="pt-3 border-t border-zinc-800/70 flex items-center justify-between text-[11px] font-mono shrink-0">
                     <a href="#about" class="text-zinc-500 hover:text-zinc-200 transition-colors flex items-center gap-1.5">
                         <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                        <span>Personal</span>
+                        <span>Personal Information</span>
                     </a>
                     <a href="#family-friends" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-1.5">
-                        <span>Next: People</span>
+                        <span>Next: Family and Friend</span>
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </section>
 
             <!-- =============================================================== -->
-            <!-- VIEW 4: PEOPLE (#family-friends)                                -->
+            <!-- VIEW 4: FAMILY AND FRIEND (#family-friends)                     -->
             <!-- =============================================================== -->
             <section id="family-friends" class="view-slide flex-col justify-between minimal-surface rounded-2xl p-6 sm:p-8 overflow-hidden gap-4">
                 <div class="flex items-baseline justify-between pb-3 border-b border-zinc-800/70 shrink-0">
                     <h2 class="text-base sm:text-lg font-display font-semibold text-white tracking-tight">
-                        Family &amp; Friend
+                        Family and Friend
                     </h2>
                     <span class="text-[11px] font-mono text-zinc-500">04 / 04</span>
                 </div>
@@ -500,7 +500,7 @@
                                 <span class="text-[10px] font-mono text-zinc-500">Support</span>
                             </div>
                             <p class="text-[11px] text-zinc-400 leading-relaxed font-light">
-                                My adoptive mother who stepped up to work and supported me all the way through my studies.
+                                My adopted mother who stepped up to work and supported me all the way through my studies.
                             </p>
                         </figcaption>
                     </figure>
@@ -530,10 +530,10 @@
                 <div class="pt-3 border-t border-zinc-800/70 flex items-center justify-between text-[11px] font-mono shrink-0">
                     <a href="#achievements" class="text-zinc-500 hover:text-zinc-200 transition-colors flex items-center gap-1.5">
                         <i class="fa-solid fa-arrow-left text-[10px]"></i>
-                        <span>Milestones</span>
+                        <span>Achievements</span>
                     </a>
                     <a href="#home" class="text-zinc-300 hover:text-white transition-colors flex items-center gap-1.5">
-                        <span>Back to Overview</span>
+                        <span>Back to Home Page</span>
                         <i class="fa-solid fa-arrow-up text-[10px]"></i>
                     </a>
                 </div>
